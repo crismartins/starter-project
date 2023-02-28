@@ -1,11 +1,23 @@
 <template>
-    <div>
-        header
-        <AppIcon iconName="mdi:air-conditioner" />
-        <nuxt-img 
-            src="/pexels/photos/14446665/pexels-photo-14446665.jpeg"
-            sizes="sm:100vw md:50vw lg:150px"
-            format="webp"
-        />
-    </div>
+    <header>
+        <div class="container">
+            <nuxt-link to="/">
+                TheLogo
+            </nuxt-link>
+
+            <AppHeaderNavigation />
+
+            <select v-model="$colorMode.preference">      <option value="system">System</option>      <option value="light">Light</option>      <option value="dark">Dark</option>      <option value="sepia">Sepia</option>    </select>
+        </div>
+    </header>
 </template>
+
+<style lang="scss" scoped>
+    header{
+        .container{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+</style>

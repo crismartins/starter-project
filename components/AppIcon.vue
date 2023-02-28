@@ -1,5 +1,7 @@
 <template>
-	<Icon :name="props.iconName" />
+    <i class="icon__wrapper">
+	    <Icon :name="props.iconName" />
+    </i>
 </template>
 
 <script setup>
@@ -10,3 +12,9 @@
         }
     })
 </script>
+
+<style scoped>
+    .icon__wrapper{
+        display: initial;
+    }
+</style>
