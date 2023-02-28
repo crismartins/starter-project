@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
+    "@nuxtjs/color-mode": "^3.2.0",
     "@types/node": "^18.14.2",
     "nuxt": "^3.2.2",
     "nuxt-icon": "^0.3.2"

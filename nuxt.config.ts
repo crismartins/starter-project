@@ -34,7 +34,7 @@ export default defineNuxtConfig({
             }
         }
     },
-    modules: ['nuxt-icon','@nuxt/image-edge'],
+    modules: ['nuxt-icon','@nuxt/image-edge','@nuxtjs/color-mode'],
     //nuxt image
     image: {
         //external images
@@ -65,5 +65,11 @@ export default defineNuxtConfig({
             xl: 1280,
             xxl: 1536,
         },
+    },
+    //color mode
+    colorMode: {    
+        preference: 'system', // default value of $colorMode.preference    
+        fallback: 'light', // fallback value if not system preference found    
+        classSuffix: '-mode',
     }
 })
