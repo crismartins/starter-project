@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
+    "@types/node": "^18.14.2",
+    "nuxt": "^3.2.2",
+    "nuxt-icon": "^0.3.2"
+  },
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}
