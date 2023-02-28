@@ -1,0 +1,28 @@
+//reset style
+html{
+    *{
+        transition: $default_transition;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: $primary_font;
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        font-family: $primary_font;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+            }
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+        }
+        span{
+            display: inline-block;
+        }
+    }
+}
