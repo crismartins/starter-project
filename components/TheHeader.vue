@@ -1,23 +1,33 @@
 <template>
     <header>
-        <div class="container">
+        <div class="container__fluid">
             <nuxt-link to="/">
                 TheLogo
             </nuxt-link>
 
             <AppHeaderNavigation />
 
-            <select v-model="$colorMode.preference">      <option value="system">System</option>      <option value="light">Light</option>      <option value="dark">Dark</option>      <option value="sepia">Sepia</option>    </select>
+            <div class="theme-switcher">
+                <input id="theme" type="radio" v-model="$colorMode.preference" value="light" />
+                <label>
+                    Light
+                </label>
+                <input id="theme" type="radio" v-model="$colorMode.preference" value="dark" />
+                <label>
+                    Dark
+                </label>
+            </div>
         </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
     header{
-        .container{
+        .container__fluid{
             padding: 20px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
     }
 </style>

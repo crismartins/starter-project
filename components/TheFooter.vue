@@ -1,5 +1,7 @@
 <template>
     <footer>
-        footer
+        <div class="container__fluid">
+            footer
+        </div>
     </footer>
 </template>
