@@ -34,7 +34,12 @@ export default defineNuxtConfig({
             }
         }
     },
-    modules: ['nuxt-icon','@nuxt/image-edge','@nuxtjs/color-mode'],
+    modules: [
+        'nuxt-icon',
+        '@nuxt/image-edge',
+        '@nuxtjs/color-mode',
+        '@pinia/nuxt',
+    ],
     //nuxt image
     image: {
         //external images
@@ -71,5 +76,13 @@ export default defineNuxtConfig({
         preference: 'system', // default value of $colorMode.preference    
         fallback: 'light', // fallback value if not system preference found    
         classSuffix: '-mode',
-    }
+    },
+    //pinia config
+    pinia: {
+        autoImports: [
+          // automatically imports `defineStore`
+          'defineStore', // import { defineStore } from 'pinia'
+          ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
+        ],
+    },
 })
