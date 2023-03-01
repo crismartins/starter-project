@@ -1,0 +1,27 @@
+[
+    {
+        "link": "/", 
+        "title": "Home", 
+        "externalLink": false
+    },
+    {
+        "link": "/login", 
+        "title": "Login", 
+        "externalLink": false
+    },
+    {
+        "link": "/dashboard", 
+        "title": "Dashboard", 
+        "externalLink": false
+    },
+    {
+        "link": "http://google.com", 
+        "title": "Google", 
+        "externalLink": true
+    },
+    {
+        "link": "http://bing.com", 
+        "title": "Bing", 
+        "externalLink": true
+    }
+]

@@ -1,8 +1,8 @@
 <template>
     <nav>
         <ul>
-            <li v-for="nav in navigation" :key="nav.title">
-                <a v-if="externalLink" :href="nav.link" rel="noopener" target="_blank">
+            <li v-for="nav in navigation.navigation" :key="nav.title">
+                <a target="_blank" v-if="nav.externalLink" :href="nav.link">
                     {{ nav.title }}
                 </a>
                 <nuxt-link v-else :to="nav.link">
@@ -19,7 +19,7 @@
             display: flex;
             li{
                 a{
-                    
+                    padding: 20px;
                 }
             }
         }
@@ -27,8 +27,10 @@
 </style>
 
 <script setup>
-    const navigation = [
-        {link: '/', title: 'Home', externalLink: false},
-        {link: 'http://google.com', title: 'Google', externalLink: true},
-    ]
+    // import navigation from "@/data/navigation.json"
+    
+    import { navigationHeaderStore } from '@/store/navigation'
+
+    // // access the `store` variable anywhere in the component ✨
+    const navigation = navigationHeaderStore()
 </script>
