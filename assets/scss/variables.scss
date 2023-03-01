@@ -1,56 +1,53 @@
-//fonts
-$primary_font: 'Courier New', Courier, monospace;
-
 //colors
 :root {
+    --neutral_color: #d8d8d8;
     --primary_color: #2200ff;
     --secondary_color: #ffd900;
     //pure colors
     --pure_black:#000000;
     --pure_white:#ffffff;
-    //lighter colors
-    --primary_color_lighter: #7a66ff;
-    --secondary_color_lighter: #ffe866;
-    //dark colors
-    --primary_color_darker: #140099;
-    --secondary_color_darker: #998200;
 }
 .dark-mode {
+    --neutral_color: #d8d8d8;
     --primary_color: red;
     --secondary_color: pink;
     //pure colors
     --pure_black:#000000;
     --pure_white:#ffffff;
-    //lighter colors
-    --primary_color_lighter: #7a66ff;
-    --secondary_color_lighter: #ffe866;
-    //dark colors
-    --primary_color_darker: #140099;
-    --secondary_color_darker: #998200;
 }
 
+//fonts
+$primary_font: 'Courier New', Courier, monospace;
+
 //pixels to rem sizes (only for font sizes)
-$_4px: 0.25rem;
-$_8px: 0.5rem;
-$_12px: 0.75rem;
-$_14px: 0.875rem;
-$_16px: 1rem;
-$_20px: 1.25rem;
-$_24px: 1.5rem;
-$_28px: 1.75rem;
-$_32px: 2rem;
-$_36px: 2.25rem;
-$_40px: 2.5rem;
-$_44px: 2.75rem;
-$_48px: 3rem;
-$_52px: 3.25rem;
-$_56px: 3.5rem;
-$_60px: 3.75rem;
-$_64px: 4rem;
-$_68px: 4.25rem;
-$_72px: 4.5rem;
-$_76px: 4.75rem;
-$_80px: 5rem;
+$size_4px: 0.25rem;
+$size_8px: 0.5rem;
+$size_12px: 0.75rem;
+$size_14px: 0.875rem;
+$size_16px: 1rem;
+$size_20px: 1.25rem;
+$size_24px: 1.5rem;
+$size_28px: 1.75rem;
+$size_32px: 2rem;
+$size_36px: 2.25rem;
+$size_40px: 2.5rem;
+$size_44px: 2.75rem;
+$size_48px: 3rem;
+$size_52px: 3.25rem;
+$size_56px: 3.5rem;
+$size_60px: 3.75rem;
+$size_64px: 4rem;
+$size_68px: 4.25rem;
+$size_72px: 4.5rem;
+$size_76px: 4.75rem;
+$size_80px: 5rem;
+
+//font sizes
+$size_default: $size_16px;
+$size_small: $size_12px;
+$size_medium: $size_44px;
+$size_large: $size_80px;
+
 
 //responsive breakpoints
 $br_mobile: 640px;
