@@ -28,17 +28,20 @@
         </div>
         <div class="buttons">
             <div>
-                <AppIcon iconName="ph:shopping-cart-duotone" iconSize="small" />
-                <AppIcon iconName="ph:shopping-cart-duotone" />
-                <AppIcon iconName="ph:shopping-cart-duotone" iconSize="medium" />
-                <AppIcon iconName="ph:shopping-cart-duotone" iconSize="large" />
-            </div>
-            <div>
                 <AppIcon iconSize="small" />
                 <AppIcon />
                 <AppIcon iconSize="medium" />
                 <AppIcon iconSize="large" />
+                <AppIcon iconSize="huge" />
             </div>
+            <div>
+                <AppIcon iconName="ph:shopping-cart-duotone" iconSize="small" />
+                <AppIcon iconName="ph:shopping-cart-duotone" />
+                <AppIcon iconName="ph:shopping-cart-duotone" iconSize="medium" />
+                <AppIcon iconName="ph:shopping-cart-duotone" iconSize="large" />
+                <AppIcon iconName="ph:shopping-cart-duotone" iconSize="huge" />
+            </div>
+            
             <div>
                 <AppButton buttonSize="small">Button</AppButton>
                 <AppButton>Button</AppButton>
@@ -53,6 +56,21 @@
                 <AppButton class="outline">Outline Default</AppButton>
                 <AppButton class="outline primary">Outline Primary</AppButton>
                 <AppButton class="outline secondary">Outline Secondary</AppButton>
+            </div>
+            <div>
+                <input type="text">
+                <input type="password">
+                <input type="number">
+                <input type="email">
+                <input type="search">
+                <select name="" id="">
+                    <option value="">test</option>
+                </select>
+                <input type="checkbox" name="" id="">
+                <input type="radio">
+                <input type="color" name="" id="">
+                <input type="date" name="" id="">
+                <input type="file" name="" id="">
             </div>
         </div>
         <div>
