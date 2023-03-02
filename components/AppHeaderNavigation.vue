@@ -17,6 +17,7 @@
     nav{
         ul{
             display: flex;
+            flex-wrap: wrap;
             li{
                 a{
                     padding: 20px;

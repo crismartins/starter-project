@@ -1,10 +1,12 @@
 <template>
-    <nuxt-link v-if="props.buttonLink" :to="props.buttonLink" class="button">
-        <slot></slot>
-    </nuxt-link>
-    <button v-else :class="`button-size__${buttonSize}`" class="button">
-	    <slot></slot>
-    </button>
+    <div>
+        <nuxt-link v-if="props.buttonLink" :class="`button-size__${buttonSize}`" :to="props.buttonLink">
+            <slot></slot>
+        </nuxt-link>
+        <button v-else :class="`button-size__${buttonSize}`">
+            <slot></slot>
+        </button>
+    </div>
 </template>
 
 <script setup>
@@ -21,7 +23,7 @@
 
 <style lang="scss" scoped>
 
-.button{
+button, a{
     padding: 8px 12px;
     border-radius: 4px;
     border: 2px solid transparent;

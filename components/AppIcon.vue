@@ -33,6 +33,9 @@
             &__large{
                 font-size: $size_large;
             }
+            &__huge{
+                font-size: $size_huge;
+            }
         }
     }
 </style>
