@@ -25,14 +25,75 @@ html{
         span{
             display: inline-block;
         }
-    }
-}
 
-//reusable styles
-.container{
-    max-width: 1280px;
-    margin: auto;
-    &__fluid{
-        max-width: 100%;
+        //forms
+        input, select,textarea {
+            border: 1px solid var(--pure_black);
+            padding: 12px;
+            border-radius:4px;
+            font-size: $size_16px;
+            padding: 16px;
+            &:focus{
+                border-color: var(--primary_color);
+                outline: none;
+                & + label{
+                    top: -50%;
+                    left: 0;
+                }
+            }
+            &:not(:placeholder-shown){
+                & + label{
+                    top: -50%;
+                    left: 0;
+                }
+            }
+            &.input{
+                &-small{
+                    label{
+                        font-size: $size_14px;
+                        left: 12px;
+                    }
+                    input{
+                        font-size: $size_14px;
+                        padding: 12px;
+                    }
+                }
+                &-medium{
+                    label{
+                        font-size: $size_24px;
+                        left: 16px;
+                    }
+                    input{
+                        font-size: $size_24px;
+                        padding: 16px;
+                    }
+                }
+                &-large{
+                    label{
+                        font-size: $size_28px;
+                        left: 24px;
+                    }
+                    input{
+                        font-size: $size_28px;
+                        padding: 24px;
+                    }
+                }
+            }
+            &.inline{
+                flex-direction: initial;
+                input{
+                    flex-grow: 1;
+                }
+            }
+        }
+
+        //structure
+        .container{
+            max-width: 1280px;
+            margin: auto;
+            &__fluid{
+                max-width: 100%;
+            }
+        }
     }
 }
