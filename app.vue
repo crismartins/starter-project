@@ -4,10 +4,10 @@
   </NuxtLayout>
 </template>
 
-<style>
+<style lang="scss">
     .page-enter-active,
     .page-leave-active {
-        transition: all 0.4s;
+        transition: $default_transition;
     }
     .page-enter-from,
     .page-leave-to {
@@ -16,10 +16,11 @@
     }
     .layout-enter-active,
     .layout-leave-active {
-        transition: all 0.4s;
+        transition: $default_transition;
     }
     .layout-enter-from,
     .layout-leave-to {
-        filter: grayscale(1);
+        opacity: 0;
+        filter: blur(1rem);
     }
 </style>
